@@ -1,44 +1,36 @@
 {
-  "name": "pino-mongodb",
-  "version": "0.7.0",
-  "description": "Load pino logs into MongoDB",
+  "name": "pino-couch",
+  "version": "0.1.0",
+  "description": "Load pino logs into CouchDB (or Cloudant)",
   "main": "index.js",
-  "scripts": {
-    "test": "clear && tap test/*",
-    "tt": "clear && tap",
-    "postversion": "git push & git push --tags & npm publish"
-  },
   "bin": {
-    "pino-mongodb": "pino-mongodb.js"
+    "pino-couch": "pino-couch.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ViktorKonsta/pino-mongodb.git"
+  "scripts": {
+    "lint": "eslint ."
   },
   "keywords": [
     "pino",
-    "mongo",
-    "mongodb",
-    "pino-mongodb",
+    "pino-couch",
+    "pino-cloudant",
+    "couchdb",
     "logs",
     "logger"
   ],
-  "author": "ViktorKonsta",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ViktorKonsta/pino-mongodb/issues"
-  },
-  "homepage": "https://github.com/ViktorKonsta/pino-mongodb#readme",
+  "authors": [
+    "Steven R. Loomis <srloomis@us.ibm.com>",
+    "ViktorKonsta"
+  ],
+  "license": "Apache-2.0",
   "dependencies": {
-    "commander": "^2.9.0",
-    "mongodb": "^2.2.11"
+    "carrier": "^0.3.0",
+    "cloudant": "^1.7.1",
+    "commander": "^2.9.0"
   },
   "devDependencies": {
-    "eslint": "^3.11.0",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1",
-    "sinon": "^1.17.6",
-    "tap": "^8.0.1"
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
