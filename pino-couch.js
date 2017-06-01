@@ -18,10 +18,10 @@
 'use strict'
 
 const pkg = require('./package.json')
-const Cloudant = require('cloudant')
 const program = require('commander')
 const insert = require('./lib/insert')
 const carrier = require('carrier')
+const url = require('url')
 
 program
   .version(pkg.version)
@@ -29,20 +29,15 @@ program
   .option('-U, --url <url>', 'set database server', 'http://127.0.0.1:5984')
   .option('-d, --db <name>', 'set database name (logs)', 'logs')
   .option('-q, --quiet', 'suppress stdin to stdout output (false)', false)
-  .option('--show-insert-errors', 'show errors from inserting documents into cloudant (true)', true)
+  .option('--show-insert-errors', 'show errors from inserting documents into couchdb (true)', true)
   .option('-t, --trace-inserts', 'trace all inserted documents (false)', false)
   .parse(process.argv)
 
-Cloudant(program.url, (e, cloudant) => {
-  if (e) {
-    throw e
-  }
+const rl = carrier.carry(process.stdin)
 
-  // Don't open stdin until Cloudant is available.
-  const rl = carrier.carry(process.stdin)
+const postUrl = url.resolve(program.url, '/' + program.db + '?batch=ok')
 
-  rl.on('line', insert.bind({
-    db: cloudant.db.use(program.db),
-    program: program
-  }))
-})
+rl.on('line', insert.bind({
+  program: program,
+  url: postUrl
+}))
