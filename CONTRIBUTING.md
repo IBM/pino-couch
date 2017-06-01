@@ -31,6 +31,8 @@ Please ensure you follow the coding standards used throughout the existing code 
  - All files must have the Apache license in the header.
  - Indent with 4 spaces, not tabs.
 
+This project uses `eslint`. So, run `npm i && npm run lint`.
+
 ### Contributor License Agreement
 
 In order for us to accept pull requests, the contributor must first complete
