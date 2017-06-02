@@ -6,6 +6,10 @@
   "bin": {
     "pino-couch": "pino-couch.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IBM/pino-couch"
+  },
   "scripts": {
     "lint": "eslint ."
   },

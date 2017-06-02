@@ -4,12 +4,14 @@
 
 > 🌲 Load [pino](https://github.com/pinojs/pino) logs into CouchDB (or Cloudant, for that matter)
 
-Actually it will convert any data from `stdin` (not just `pino` logs) and if it can parse it  
+Actually it will convert any data from `stdin` (not just `pino` logs) and if it can parse it
 as `JSON` then it will insert that into `couch` otherwise it will insert that as it is, but with `msg` field and a timestamp.
 
 Based upon [pino-mongodb](https://github.com/Kuroljov/pino-mongodb)
 
 ## Install
+
+[![npm version](https://badge.fury.io/js/pino-couch.svg)](https://badge.fury.io/js/pino-couch)
 
 ```
 npm i -g pino-couch
