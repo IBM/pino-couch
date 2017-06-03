@@ -31,8 +31,6 @@ Write logs into CouchDB, and still format them nicely to the console:
 npm i -g pino
 node my-app.js | pino-couch [options] | pino
 ```
-
-
 ## Options
 
 ```
@@ -50,6 +48,10 @@ node my-app.js | pino-couch [options] | pino
     --show-insert-errors  show errors from inserting documents into cloudant (true)
     -t, --trace-inserts   trace all inserted documents (false)
 ```
+
+## Tutorial
+
+See the [blog post](https://srl295.github.io/2017/06/02/pino-couch/)
 
 ## Tests
 
