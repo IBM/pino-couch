@@ -1,7 +1,5 @@
 # pino-couch
 
-[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-
 > 🌲 Load [pino](https://github.com/pinojs/pino) logs into CouchDB (or Cloudant, for that matter)
 
 Actually it will convert any data from `stdin` (not just `pino` logs) and if it can parse it
@@ -9,6 +7,9 @@ as `JSON` then it will insert that into `couch` otherwise it will insert that as
 
 Based upon [pino-mongodb](https://github.com/Kuroljov/pino-mongodb)
 
+[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/IBM/pino-couch.svg)](http://isitmaintained.com/project/IBM/pino-couch "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/IBM/pino-couch.svg)](http://isitmaintained.com/project/IBM/pino-couch "Percentage of issues still open")
 ## Install
 
 [![npm version](https://badge.fury.io/js/pino-couch.svg)](https://badge.fury.io/js/pino-couch)
