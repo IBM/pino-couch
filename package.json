@@ -1,23 +1,24 @@
 {
-  "name": "pino-couch",
+  "name": "pino-hny",
   "version": "1.0.2-0",
   "description": "Load pino logs into CouchDB (or Cloudant)",
   "main": "index.js",
   "bin": {
-    "pino-couch": "pino-couch.js"
+    "pino-hny": "pino-hny.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/IBM/pino-couch"
+    "url": "https://github.com/dangolant/pino-hny"
   },
   "scripts": {
     "lint": "eslint ."
   },
   "keywords": [
     "pino",
-    "pino-couch",
+    "pino-hny",
     "pino-cloudant",
-    "couchdb",
+	"honeycomb",
+	"hny",
     "logs",
     "logger"
   ],

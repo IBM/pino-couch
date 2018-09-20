@@ -1,43 +1,43 @@
-# pino-couch
+# pino-hny
 
-> 🌲 Load [pino](https://github.com/pinojs/pino) logs into CouchDB (or Cloudant, for that matter)
+> 🌲 Load [pino](https://github.com/pinojs/pino) logs into Honeycomb
 
 Actually it will convert any data from `stdin` (not just `pino` logs) and if it can parse it
-as `JSON` then it will insert that into `couch` otherwise it will insert that as it is, but with `msg` field and a timestamp.
+as `JSON` then it will insert that into `honeycomb` otherwise it will insert that as it is, but with `msg` field and a timestamp.
 
-Based upon [pino-mongodb](https://github.com/Kuroljov/pino-mongodb)
+Based upon [pino-couch](https://github.com/IBM/pino-couch)
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/IBM/pino-couch.svg)](http://isitmaintained.com/project/IBM/pino-couch "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/IBM/pino-couch.svg)](http://isitmaintained.com/project/IBM/pino-couch "Percentage of issues still open")
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/IBM/pino-hny.svg)](http://isitmaintained.com/project/IBM/pino-hny "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/IBM/pino-hny.svg)](http://isitmaintained.com/project/IBM/pino-hny "Percentage of issues still open")
 ## Install
 
-[![npm version](https://badge.fury.io/js/pino-couch.svg)](https://badge.fury.io/js/pino-couch)
+<!-- [![npm version](https://badge.fury.io/js/pino-hny.svg)](https://badge.fury.io/js/pino-hny) -->
 
 ```
-npm i -g pino-couch
+npm i -g pino-hny
 ```
 
 ## Usage
 
-Write logs into CouchDB
+Write logs into Honeycomb
 
 ```
-node my-app.js | pino-couch [options]
+node my-app.js | pino-hny [options]
 ```
 
-Write logs into CouchDB, and still format them nicely to the console:
+Write logs into Honeycomb, and still format them nicely to the console:
 
 ```
 npm i -g pino
-node my-app.js | pino-couch [options] | pino
+node my-app.js | pino-hny [options] | pino
 ```
 ## Options
 
 ```
-  Usage: pino-couch [options]
+  Usage: pino-hny [options]
 
-  Load pino logs into CouchDB (or Cloudant)
+  Load pino logs into Honeycombå
 
   Options:
 
@@ -52,8 +52,8 @@ node my-app.js | pino-couch [options] | pino
 
 ## Tutorial
 
-See the [blog post](https://srl295.github.io/2017/06/02/pino-couch/)
-
+<!-- See the [blog post](https://srl295.github.io/2017/06/02/pino-hny/) -->
+Coming soon
 ## Tests
 
 TBD

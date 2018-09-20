@@ -1,4 +1,4 @@
-# Contributing to the pino-couch project
+# Contributing to the pino-hny project
 
 We welcome contributions but request that you follow these guidelines.
 
@@ -34,7 +34,9 @@ Please ensure you follow the coding standards used throughout the existing code 
 This project uses `eslint`. So, run `npm i && npm run lint`.
 
 ### Contributor License Agreement
-
+I am fairly certain that under Apache I am allowed to overwrite IBM's requirement, but if I am not please let me know 
+<!-- Would love guidance as to whether forks require CLA, would love to remove the following: 
+ 
 In order for us to accept pull requests, the contributor must first complete
 a Contributor License Agreement (CLA). This clarifies the intellectual 
 property license granted with any contribution. It is for your protection as a 
@@ -47,10 +49,9 @@ You can download the CLAs here:
  - [corporate](https://github.com/IBM-Bluemix/gp-common/raw/master/legal/gp-cla-corporate.pdf)
 
 If you are an IBMer, please contact us directly as the contribution process is
-slightly different.
+slightly different. -->
 
 ### Acknowledgement
 
-- Master copy: https://github.com/IBM-Bluemix/gp-common/blob/master/CONTRIBUTING.md
-- Copyright © 2017 IBM Corporation.
+Props to 
 - This document forked from [wasdev](https://github.com/WASdev/wasdev.github.io/blob/master/CONTRIBUTING.md)
