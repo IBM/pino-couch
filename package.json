@@ -17,8 +17,8 @@
     "pino",
     "pino-hny",
     "pino-cloudant",
-	"honeycomb",
-	"hny",
+    "honeycomb",
+    "hny",
     "logs",
     "logger"
   ],
@@ -30,6 +30,7 @@
   "dependencies": {
     "carrier": "^0.3.0",
     "commander": "^2.9.0",
+    "libhoney": "^1.1.3",
     "request": "^2.81.0"
   },
   "devDependencies": {
