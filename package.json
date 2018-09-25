@@ -30,8 +30,7 @@
   "dependencies": {
     "carrier": "^0.3.0",
     "commander": "^2.9.0",
-    "libhoney": "^1.1.3",
-    "request": "^2.81.0"
+    "libhoney": "^1.1.3"
   },
   "devDependencies": {
     "eslint": "^3.19.0",

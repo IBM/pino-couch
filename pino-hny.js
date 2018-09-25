@@ -21,7 +21,6 @@ const pkg = require('./package.json')
 const program = require('commander')
 const insert = require('./lib/insert')
 const carrier = require('carrier')
-const url = require('url')
 
 program
   .version(pkg.version)

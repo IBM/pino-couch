@@ -3,3 +3,5 @@ installedESLint: true
 plugins:
   - standard
   - promise
+rules:
+  semi: 0
