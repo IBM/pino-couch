@@ -1,7 +1,7 @@
 {
   "name": "pino-hny",
-  "version": "1.0.2-0",
-  "description": "Load pino logs into CouchDB (or Cloudant)",
+  "version": "0.1.0-0",
+  "description": "Load pino logs into Honeycomb",
   "main": "index.js",
   "bin": {
     "pino-hny": "pino-hny.js"
@@ -16,15 +16,15 @@
   "keywords": [
     "pino",
     "pino-hny",
-    "pino-cloudant",
     "honeycomb",
     "hny",
     "logs",
     "logger"
   ],
   "authors": [
-    "Steven R. Loomis <srloomis@us.ibm.com>",
-    "ViktorKonsta"
+    "Forked from Steven R. Loomis <srloomis@us.ibm.com>",
+	"Forked from ViktorKonsta",
+	"Daniel Golant"
   ],
   "license": "Apache-2.0",
   "dependencies": {
