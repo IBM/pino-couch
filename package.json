@@ -1,35 +1,36 @@
 {
-  "name": "pino-couch",
-  "version": "1.0.2-0",
-  "description": "Load pino logs into CouchDB (or Cloudant)",
+  "name": "pino-hny",
+  "version": "0.1.0-0",
+  "description": "Load pino logs into Honeycomb",
   "main": "index.js",
   "bin": {
-    "pino-couch": "pino-couch.js"
+    "pino-hny": "pino-hny.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/IBM/pino-couch"
+    "url": "https://github.com/dangolant/pino-hny"
   },
   "scripts": {
     "lint": "eslint ."
   },
   "keywords": [
     "pino",
-    "pino-couch",
-    "pino-cloudant",
-    "couchdb",
+    "pino-hny",
+    "honeycomb",
+    "hny",
     "logs",
     "logger"
   ],
   "authors": [
-    "Steven R. Loomis <srloomis@us.ibm.com>",
-    "ViktorKonsta"
+    "Forked from Steven R. Loomis <srloomis@us.ibm.com>",
+	"Forked from ViktorKonsta",
+	"Daniel Golant"
   ],
   "license": "Apache-2.0",
   "dependencies": {
     "carrier": "^0.3.0",
     "commander": "^2.9.0",
-    "request": "^2.81.0"
+    "libhoney": "^1.1.3"
   },
   "devDependencies": {
     "eslint": "^3.19.0",

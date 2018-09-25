@@ -21,23 +21,17 @@ const pkg = require('./package.json')
 const program = require('commander')
 const insert = require('./lib/insert')
 const carrier = require('carrier')
-const url = require('url')
 
 program
   .version(pkg.version)
   .description(pkg.description)
-  .option('-U, --url <url>', 'set database server', 'http://127.0.0.1:5984')
-  .option('-d, --db <name>', 'set database name (logs)', 'logs')
+  .option('-k, --write-key <key>', 'set write-key')
+  .option('-d, --dataset-name <name>', 'set dataset name (logs)')
   .option('-q, --quiet', 'suppress stdin to stdout output (false)', false)
-  .option('--show-insert-errors', 'show errors from inserting documents into couchdb (true)', true)
-  .option('-t, --trace-inserts', 'trace all inserted documents (false)', false)
   .parse(process.argv)
 
 const rl = carrier.carry(process.stdin)
 
-const postUrl = url.resolve(program.url, '/' + program.db + '?batch=ok')
-
 rl.on('line', insert.bind({
-  program: program,
-  url: postUrl
+  program: program
 }))
